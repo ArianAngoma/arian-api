@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const {google} = require('googleapis');
+const path = require('path');
 require('dotenv').config();
 
 /* Servidor de express */
@@ -20,6 +21,7 @@ app.use(express.json());
 const oAuth2Client = new google.auth.OAuth2(process.env.ID_CLIENT, process.env.ID_SECRET, process.env.REDIRECT_URL);
 oAuth2Client.setCredentials({refresh_token: process.env.REFRESH_TOKEN});
 
+/* Rutas */
 /* Ruta principal */
 app.get('/api', (req, res, next) => {
     return res.status(200).json({
@@ -68,6 +70,14 @@ app.post('/api/email', async (req, res, next) => {
         });
     }
 });
+
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'public/index.html'), function(err) {
+        if (err) {
+            res.status(500).send(err)
+        }
+    })
+})
 
 /* Escuchar peticiones */
 app.listen(process.env.PORT, () => {
