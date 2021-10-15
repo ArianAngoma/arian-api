@@ -1,8 +1,8 @@
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const {google} = require('googleapis');
-const path = require('path');
 require('dotenv').config();
 
 /* Servidor de express */
@@ -71,13 +71,14 @@ app.post('/api/email', async (req, res, next) => {
     }
 });
 
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'public/index.html'), function(err) {
+/* Ruta global */
+app.get('/*', function (req, res, next) {
+    res.sendFile(path.join(__dirname, 'public/index.html'), (err) => {
         if (err) {
-            res.status(500).send(err)
+            res.status(500).send(err)v
         }
-    })
-})
+    });
+});
 
 /* Escuchar peticiones */
 app.listen(process.env.PORT, () => {
