@@ -75,7 +75,7 @@ app.post('/api/email', async (req, res, next) => {
 app.get('/*', function (req, res, next) {
     res.sendFile(path.join(__dirname, 'public/index.html'), (err) => {
         if (err) {
-            res.status(500).send(err)v
+            res.status(500).send(err);
         }
     });
 });
