@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.3c580ce5.chunk.js",
-    "main.js.map": "/static/js/main.3c580ce5.chunk.js.map",
+    "main.js": "/static/js/main.3a3ad4b1.chunk.js",
+    "main.js.map": "/static/js/main.3a3ad4b1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b970a86d.js",
     "runtime-main.js.map": "/static/js/runtime-main.b970a86d.js.map",
     "static/css/2.853ba1bc.chunk.css": "/static/css/2.853ba1bc.chunk.css",
@@ -17,6 +17,7 @@
     "static/media/about-sec-img.bd7f5f8e.jpg": "/static/media/about-sec-img.bd7f5f8e.jpg",
     "static/media/calendar-app.980ac4b3.jpeg": "/static/media/calendar-app.980ac4b3.jpeg",
     "static/media/hero2.57fa962a.gif": "/static/media/hero2.57fa962a.gif",
+    "static/media/portfolio-arianjs.a9ef7ec9.jpeg": "/static/media/portfolio-arianjs.a9ef7ec9.jpeg",
     "static/media/projectImg.e5d14d3a.png": "/static/media/projectImg.e5d14d3a.png",
     "static/media/scroll-down-arrow.8ad25c53.svg": "/static/media/scroll-down-arrow.8ad25c53.svg",
     "static/media/social-media-arrow.ecc0133c.svg": "/static/media/social-media-arrow.ecc0133c.svg"
@@ -25,6 +26,6 @@
     "static/js/runtime-main.b970a86d.js",
     "static/css/2.853ba1bc.chunk.css",
     "static/js/2.0721e044.chunk.js",
-    "static/js/main.3c580ce5.chunk.js"
+    "static/js/main.3a3ad4b1.chunk.js"
   ]
 }
