@@ -1,4 +1,3 @@
-const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
@@ -69,15 +68,6 @@ app.post('/api/email', async (req, res, next) => {
             msg: 'Hable con el administrador'
         });
     }
-});
-
-/* Ruta global */
-app.get('/*', function (req, res, next) {
-    res.sendFile(path.join(__dirname, 'public/index.html'), (err) => {
-        if (err) {
-            res.status(500).send(err);
-        }
-    });
 });
 
 /* Escuchar peticiones */
